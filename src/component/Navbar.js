@@ -1,5 +1,5 @@
 /* Nav bar for the meme generator */
-import meme from "../../public/meme.png";
+import meme from "../../src/meme.png";
 
 function Navbar() {
   return (

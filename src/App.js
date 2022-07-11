@@ -37,13 +37,16 @@ export default function Page() {
       </div>
       <div className="bg">
         <Navbar />
-        <h2>
-          {messages.length > 0
-            ? `You have ${messages.length} ${
-                messages.length === 1 ? "message" : "messages"
-              }.`
-            : "You are all caught up."}
-        </h2>
+
+        {messages.length > 0 ? (
+          <h2>
+            You have {messages.length}{" "}
+            {messages.length === 1 ? "message" : "messages"}.
+          </h2>
+        ) : (
+          <h2>You are all caught up.</h2>
+        )}
+
         {/*<Meme />*/}
       </div>
     </div>
