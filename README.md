@@ -1,2 +1,2 @@
-# magReactTraning
+# ReactTraining
 Created with CodeSandbox

@@ -1,0 +1,202 @@
+#root {
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+body {
+  padding: 0px;
+}
+.App {
+  font-family: "Poppins" sans-serif;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+.warning {
+  margin: auto;
+  position: absolute;
+  top: 500px;
+  left: 50px;
+  text-align: center;
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.oss {
+  margin: 0px;
+  padding: 0px;
+}
+/*NAV STYLE*/
+.nav-bar {
+  margin: 0px;
+  padding: 0px;
+  top: 0px;
+  left: 0px;
+  height: 100px;
+  width: 100%;
+  background-color: rgb(35, 66, 153);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+}
+.nav-bar img {
+  width: 60px;
+  padding-right: 10px;
+}
+.nav-bar > div {
+  display: flex;
+}
+
+.nav-container {
+  color: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0px;
+  height: 50px;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: rgb(50, 80, 200);
+}
+
+.nav-container p {
+  text-align: center;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.nav-logo {
+  width: 60px;
+  height: max-content;
+}
+.nav-items > li {
+  padding: 10px;
+}
+
+/*HERO STYLE*/
+.hero {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.g-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.g-element {
+  margin: 0px 20px 100px 20px;
+  background: rgb(200, 200, 50);
+  border-radius: 15px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+.g-element p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*@media (min-width: 350px) and (max-width: 500px) {
+  .bg {
+    opacity: 0;
+  }
+  .nav-container {
+    background-color: red;
+  }
+  .warning {
+    visibility: visible;
+  }
+}*/
+.bg {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*TRAVEL CARD*/
+
+.travel-container {
+  width: 80vw;
+  padding: 0px 25px 0px 25px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+.travel-container img {
+  object-fit: cover;
+  width: 150px;
+  border-radius: 8px;
+}
+.details {
+  padding-left: 20px;
+}
+.google {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* MEME GENERATOR */
+
+.meme-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.meme-form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.meme-input {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.meme-button {
+  grid-column: 1 / -1;
+  background-color: rgb(35, 66, 153);
+  color: white;
+}
+
+.meme-button,
+input {
+  border-radius: 5px;
+  border: 1px solid #d5d4d8;
+}
+input {
+  text-indent: 10px;
+}
+/* JOKE */
+
+.joke-container {
+}
+
+/* messages */
+
+.bg span {
+  color: blue;
+}
