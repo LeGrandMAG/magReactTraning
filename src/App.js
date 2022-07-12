@@ -1,34 +1,34 @@
 import "./css/styles.css";
+
 import Navbar from "./component/Navbar";
-import Meme from "./component/Meme";
-import Count from "./component/Count";
-import { useState } from "react";
 import Box from "./component/Box";
 import boxes from "./component/boxes";
 import Joke from "./component/Joke";
 import jokeData from "./data/jokeData";
+import Form1 from "./component/Form1";
+import Form from "./component/Form";
+import Magic from "./component/Magic";
+import CheckUserAge from "./component/CheckUserAge";
 
-export default function Page() {
-  const [squares, setSquares] = useState(boxes);
-  const [messages, setMessages] = useState(["1", "2"]);
+import React, { Component, useState, useEffect } from "react";
+
+function Page() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    document.title = `You clicked ${count} times`;
+  });
   /* The jokeElements displays a list of joke and their punclines.*/
-  const jokeElements = jokeData.map((joke) => (
+  /*const jokeElements = jokeData.map((joke) => (
     <Joke key={joke.id} setup={joke.setup} punchline={joke.punchline} />
-  ));
-  function toggle(id) {
-    /*The toggle function will toggle the box on and off */
+  )); */
 
-    setSquares((prev) => {
-      const newSquares = prev.map((x) => {
-        return x.id === id ? { ...x, on: !x.on } : x;
-      });
-      return newSquares;
-    });
-  }
+  /*The toggle function will toggle the box on and off */
+
   /* This variable will return a list of box components. */
-  const squareElements = squares.map((square) => (
+  /*const squareElements = squares.map((square) => (
     <Box toggle={toggle} key={square.id} on={square.on} id={square.id} />
-  ));
+  ));*/
 
   return (
     <div className="oss">
@@ -36,19 +36,11 @@ export default function Page() {
         <p>This website is only visible from a computer</p>
       </div>
       <div className="bg">
-        <Navbar />
-
-        {messages.length > 0 ? (
-          <h2>
-            You have {messages.length}{" "}
-            {messages.length === 1 ? "message" : "messages"}.
-          </h2>
-        ) : (
-          <h2>You are all caught up.</h2>
-        )}
-
-        {/*<Meme />*/}
+        <p>You clicked {count} times</p>
+        <button onClick={() => setCount(count + 1)}>Click Me</button>
       </div>
     </div>
   );
 }
+
+export default Page;
