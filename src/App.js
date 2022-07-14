@@ -9,15 +9,11 @@ import Form1 from "./component/Form1";
 import Form from "./component/Form";
 import Magic from "./component/Magic";
 import CheckUserAge from "./component/CheckUserAge";
-
+import SideEffect from "./component/SideEffect";
+import Meme from "./component/Meme";
 import React, { Component, useState, useEffect } from "react";
-
+import WindowTracker from "./component/WindowTracker";
 function Page() {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    document.title = `You clicked ${count} times`;
-  });
   /* The jokeElements displays a list of joke and their punclines.*/
   /*const jokeElements = jokeData.map((joke) => (
     <Joke key={joke.id} setup={joke.setup} punchline={joke.punchline} />
@@ -36,8 +32,7 @@ function Page() {
         <p>This website is only visible from a computer</p>
       </div>
       <div className="bg">
-        <p>You clicked {count} times</p>
-        <button onClick={() => setCount(count + 1)}>Click Me</button>
+        <WindowTracker />
       </div>
     </div>
   );

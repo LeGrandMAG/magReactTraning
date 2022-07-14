@@ -200,3 +200,62 @@ input {
 .bg span {
   color: blue;
 }
+.img-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  height: fit-content;
+  margin-top: 2rem;
+  width: fit-content;
+}
+.meme-img {
+  max-width: 80%;
+  border-radius: 3px;
+}
+
+.meme--text {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+    2px 2px 5px #000;
+}
+
+.top {
+  top: 0;
+}
+.bottom {
+  bottom: 0;
+}
+
+.space {
+  width: 200px;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 0.8rem;
+}
+
+.download {
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 0.8rem 0rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: rgb(35, 66, 153);
+  width: 200px;
+  border-radius: 5px;
+}
