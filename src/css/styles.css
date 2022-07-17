@@ -259,3 +259,23 @@ input {
   width: 200px;
   border-radius: 5px;
 }
+
+#main {
+  margin-top: 2rem;
+}
+/*MEMORY*/
+.dog-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+.dog-pic {
+  width: 100px;
+  aspect-ratio: 16/16;
+  margin: 10px;
+  wrap: flex-wrap;
+}
+.dog-pic:hover {
+  border: 1px solid blue;
+}

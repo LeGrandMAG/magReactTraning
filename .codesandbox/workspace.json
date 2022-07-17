@@ -31,10 +31,10 @@
     {
       "views": [
         {
-          "id": "codesandbox.console"
+          "id": "codesandbox.react-devtools"
         },
         {
-          "id": "codesandbox.react-devtools"
+          "id": "codesandbox.console"
         },
         {
           "id": "codesandbox.problems"

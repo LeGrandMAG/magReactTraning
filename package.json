@@ -5,10 +5,14 @@
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
+    "@emotion/react": "11.9.3",
+    "@emotion/styled": "11.9.3",
+    "@mui/icons-material": "5.8.4",
+    "@mui/material": "5.9.0",
     "axios": "0.27.2",
     "gapi": "0.0.3",
     "html2canvas": "1.4.1",
-    "midi-sounds-react": "1.2.54",
+    "nanoid": "4.0.0",
     "react": "18.0.0",
     "react-dom": "18.0.0",
     "react-scripts": "4.0.0"

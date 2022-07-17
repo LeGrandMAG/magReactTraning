@@ -12,7 +12,9 @@ import SideEffect from "./component/SideEffect";
 import Meme from "./component/Meme";
 import React, { Component, useState, useEffect } from "react";
 import WindowTracker from "./component/WindowTracker";
-import ToDoApp from "./component/ToDoApp";
+import Expense from "./App/Expense";
+import ButtonAppBar from "./component/Appbar";
+import Memory from "./App/Memory";
 
 function Page() {
   return (
@@ -21,7 +23,8 @@ function Page() {
         <p>This website is only visible from a computer</p>
       </div>
       <div className="bg">
-        <ToDoApp />
+        <ButtonAppBar />
+        <Memory />
       </div>
     </div>
   );
